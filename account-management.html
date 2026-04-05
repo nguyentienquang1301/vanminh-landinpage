@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing Page Văn Minh - Sản phẩm, So sánh, Tư vấn">
+    <title>Văn Minh | Quản lý tài khoản</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white min-h-screen flex flex-col">
+    <!-- HEADER -->
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-screen-2xl mx-auto px-6 lg:px-10">
+            <div class="flex items-center justify-between py-3">
+                
+                <div class="flex items-center gap-x-3 w-[51px] h-[45px]">
+                    <img src="./images/logo/logo_vm.png" alt="Logo Văn minh">
+                </div>
+
+                <!-- Desktop Navigation -->
+                <!-- Desktop Navigation với Dropdown -->
+        <nav class="hidden md:flex items-center gap-x-8 text-[#1D2939] text-[14px] font-medium">
+    
+            <div class="group relative">
+                <button onclick="toggleDropdown(this)" 
+                        class="nav-link flex items-center gap-x-1.5 hover:text-[#F4600C] focus:outline-none">
+                    <span>Sản phẩm</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                
+                <div class="dropdown-menu absolute hidden group-hover:block pt-7 left-0 z-50 border-[#EAECF0]">
+                    <div class="bg-white rounded-lg shadow-2xl border border-gray-100 py-5 px-5 w-72">
+                        
+                        <div class="relative group/sub">
+                            <div>
+                                <button
+                                class="w-full px-4 py-3 hover:bg-[#F4600C] rounded-xl group-hover/sub:bg-white group-hover/sub:text-[#F4600C]">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-[16px]">Đặt vé</div>
+                                        <div class="group-hover/sub:rotate-90 group-hover/sub:text-[#F4600C] transition-transform duration-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            
+                            <div class="submenu absolute hidden group-hover/sub:block top-0 left-full ml-6 pt-1 w-64 z-50">
+                                <div class="bg-white rounded-lg shadow-2xl border border-gray-100 py-4 px-5">
+                                    <a href="#" class="block px-5 py-3 hover:bg-[#F4600C] rounded-xl text-[16px]">Tuyến HN-NA</a>
+                                    <a href="#" class="block px-5 py-3 hover:bg-[#F4600C] rounded-xl text-[16px]">Tuyến HN-ĐN</a>
+                                    <a href="#" class="block px-5 py-3 hover:bg-[#F4600C] rounded-xl text-[16px]">Tuyến HN-HT</a>
+                                    <a href="#" class="block px-5 py-3 hover:bg-[#F4600C] rounded-xl text-[16px]">Tuyến HN-QB</a>
+                                    <a href="#" class="block px-5 py-3 hover:bg-[#F4600C] rounded-xl text-[16px]">Tuyến NA-ĐN</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative group/sub">
+                            <div>
+                                <button
+                                class="w-full px-4 py-3 hover:bg-[#F4600C] rounded-xl group-hover/sub:bg-white group-hover/sub:text-[#F4600C]">
+                                    <div class="flex items-center justify-between">
+                                        <div class="text-[16px]">Chuyển phát hàng hoá</div>
+                                        <div class="group-hover/sub:rotate-90 group-hover/sub:text-[#F4600C] transition-transform duration-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            
+                            <div class="submenu absolute hidden group-hover/sub:block top-0 left-full ml-6 pt-1 w-64 z-50">
+                                <div class="bg-white rounded-2xl shadow-2xl border border-gray-100 py-4 px-5">
+                                    <a href="#" class="block px-5 py-3 hover:bg-[#F4600C] rounded-xl text-[16px]">Tuyến HN-NA</a>
+                                    <a href="#" class="block px-5 py-3 hover:bg-[#F4600C] rounded-xl text-[16px]">Tuyến HN-ĐN</a>
+                                    <a href="#" class="block px-5 py-3 hover:bg-[#F4600C] rounded-xl text-[16px]">Tuyến HN-HT</a>
+                                    <a href="#" class="block px-5 py-3 hover:bg-[#F4600C] rounded-xl text-[16px]">Tuyến HN-QB</a>
+                                    <a href="#" class="block px-5 py-3 hover:bg-[#F4600C] rounded-xl text-[16px]">Tuyến NA-ĐN</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="w-full px-4 py-3 hover:bg-white hover:text-[#F4600C] rounded-xl">
+                            <div class="flex items-center justify-between">
+                                <div class="text-[16px]">Du học</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="group relative">
+                <button onclick="toggleDropdown(this)" 
+                        class="nav-link flex items-center gap-x-1.5 hover:text-[#F4600C] focus:outline-none">
+                    <span>So sánh</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+            </div>
+
+            <a href="#" class="nav-link">Câu hỏi thường gặp</a>
+            
+            <a href="tel:19006467" class="nav-link flex items-center gap-x-2 text-[#1D2939] hover:text-[#F4600C] tracking-tight hotline-pulse">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                <span>1900 6467</span>
+            </a>
+
+            <button onclick="toggleModal(true)" 
+                    class="bg-white-500 hover:bg-[#F4600C] hover:text-[#FFFFFF] border text-[#F4600C] border-[#F4600C] px-7 py-3 rounded-xl text-[14px] transition-all active:scale-95">
+                Yêu cầu tư vấn
+            </button>
+
+            <div>
+                |
+            </div>
+
+            <div class="relative group inline-block">
+                <div class="flex items-center cursor-pointer">
+                    <div class="rounded-full bg-[#98A2B3] w-[32px] h-[32px] flex justify-center items-center">
+                        <img src="./images/icon/user.png" alt="user" class="w-[18px]">
+                    </div>
+                    <div class="px-1">Tiến Quang</div>
+                    <div class="text-[#667085]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                    </div>
+                </div>
+
+                <div class="absolute right-0 mt-6 w-[180px] bg-white border border-gray-200 rounded-lg shadow-md hidden group-hover:block">
+                    <a href="#" class="block px-4 py-2">Quản lý tài khoản</a>
+                    <a href="#" class="block px-4 py-2">Đăng xuất</a>
+                </div>
+            </div>
+        </nav>
+
+                <!-- Mobile Hamburger -->
+                <button id="hamburger-btn"
+                        class="md:hidden w-11 h-11 flex items-center justify-center focus:outline-none">
+                    <div class="space-y-1.5">
+                        <span id="line1" class="block w-6 h-0.5 bg-gray-800 rounded transition-all"></span>
+                        <span id="line2" class="block w-6 h-0.5 bg-gray-800 rounded transition-all"></span>
+                        <span id="line3" class="block w-6 h-0.5 bg-gray-800 rounded transition-all"></span>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden mobile-menu bg-white border-t border-gray-100 py-6 px-4">
+                    <div class="flex flex-col gap-y-2 text-base font-medium text-gray-700">
+                        
+                        <div class="mobile-dropdown">
+                            <button onclick="toggleMobileDropdown(this)" 
+                                    class="w-full flex items-center justify-between px-4 py-4 hover:bg-white rounded-2xl text-left">
+                                <div class="text-[16px]">Sản phẩm</div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                                </div>
+                            </button>
+                            
+                            <div class="mobile-submenu hidden pl-4">
+                                <div class="mobile-subitem group/sub">
+                                    <button onclick="toggleMobileSubDropdown(this)" 
+                                            class="w-full flex items-center justify-between px-4 py-3 hover:bg-white rounded-2xl text-left">
+                                        <div class="text-[16px]">Đặt vé</div>
+                                        <div class="chevron-icon transition-transform duration-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                                        </div>
+                                    </button>
+                                    <div class="mobile-subsubmenu hidden pl-6">
+                                        <a href="#" class="block px-4 py-3 hover:bg-white rounded-2xl text-[15px]">Tuyến HN-NA</a>
+                                        <a href="#" class="block px-4 py-3 hover:bg-white rounded-2xl text-[15px]">Tuyến HN-ĐN</a>
+                                        <a href="#" class="block px-4 py-3 hover:bg-white rounded-2xl text-[15px]">Tuyến HN-HT</a>
+                                        <a href="#" class="block px-4 py-3 hover:bg-white rounded-2xl text-[15px]">Tuyến HN-QB</a>
+                                        <a href="#" class="block px-4 py-3 hover:bg-white rounded-2xl text-[15px]">Tuyến NA-ĐN</a>
+                                    </div>
+                                </div>
+
+                                <div class="mobile-subitem">
+                                    <button onclick="toggleMobileSubDropdown(this)" 
+                                            class="w-full flex items-center justify-between px-4 py-3 hover:bg-white rounded-2xl text-left">
+                                        <div class="text-[16px]">Chuyển phát hàng hoá</div>
+                                        <div class="chevron-icon transition-transform duration-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                                        </div>
+                                    </button>
+                                    <div class="mobile-subsubmenu hidden pl-6">
+                                        <a href="#" class="block px-4 py-3 hover:bg-white rounded-2xl text-[15px]">Tuyến HN-NA</a>
+                                        <a href="#" class="block px-4 py-3 hover:bg-white rounded-2xl text-[15px]">Tuyến HN-ĐN</a>
+                                        <a href="#" class="block px-4 py-3 hover:bg-white rounded-2xl text-[15px]">Tuyến HN-HT</a>
+                                        <a href="#" class="block px-4 py-3 hover:bg-white rounded-2xl text-[15px]">Tuyến HN-QB</a>
+                                        <a href="#" class="block px-4 py-3 hover:bg-white rounded-2xl text-[15px]">Tuyến NA-ĐN</a>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="block px-4 py-4 hover:bg-white rounded-2xl">Du học</a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="block px-4 py-4 hover:bg-white rounded-2xl">So sánh</a>
+                        
+                        <a href="#" class="block px-4 py-4 hover:bg-white rounded-2xl">Câu hỏi thường gặp</a>
+
+                        <a href="tel:19006467" class="px-4 py-4 nav-link flex items-center gap-x-2 text-[#1D2939] hover:text-[#F4600C]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                            <span>1900 6467</span>
+                        </a>
+
+                        <button onclick="yeuCauTuVan()" 
+                            class="bg-white-500 border text-[#F4600C] border-[#F4600C] px-7 py-3 rounded-xl text-[14px] transition-all active:scale-95">
+                        Yêu cầu tư vấn
+                    </button>
+                    </div>
+                </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="flex-1">
+        <section class="pt-4">
+            <div class="max-w-screen-2xl mx-auto px-6 lg:px-10">
+                <div class="mb-6 flex text-[14px]">
+                    <div class="text-[#667085] font-normal">Trang chủ</div>
+                    <div class="px-2 text-[#667085] flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                    </div>
+                    <div class="font-semibold text-[#F4600C]">
+                        Quản lý tài khoản
+                    </div>
+                </div>
+                <div class="w-full">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                        <div class="md:col-span-1 col-span-1 bg-gray-50/30 rounded-2xl border border-[#EAECF0]">
+                            <div class="info-row flex items-center px-5 py-4 md:px-6 md:py-5">
+                                <h2 class="text-xl font-bold text-gray-800 tracking-tight">Tiến Quang</h2>
+                            </div>
+                            <a onclick="toggleActive(this)" href="#" class="group nav-link active flex space-x-3 px-4 py-2.5 text-[#1D2939] text-[16px] hover:bg-[#FFE2D18F] active-nav transition
+                                info-row flex px-5 py-4 md:px-6 md:py-5">
+                                <div class="text-[#667085] group-hover:text-[#F4600C]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                </div>
+                                <span class="font-medium">Thông tin tài khoản</span>
+                            </a>
+                            
+                            <a onclick="toggleActive(this)" href="#" class="group nav-link flex space-x-3 px-4 py-2.5 text-[#1D2939] text-[16px] hover:bg-[#FFE2D18F] active-nav transition
+                                info-row flex px-5 py-4 md:px-6 md:py-5">
+                                <div class="text-[#667085] group-hover:text-[#F4600C]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text-icon lucide-file-text"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                                </div>
+                                <span>Thông tin sản phẩm</span>
+                            </a>
+                            <a onclick="toggleActive(this)" href="#" class="group nav-link flex space-x-3 px-4 py-2.5 text-[#1D2939] text-[16px] hover:bg-[#FFE2D18F] active-nav transition
+                                info-row flex px-5 py-4 md:px-6 md:py-5">
+                                    <div class="text-[#667085] group-hover:text-[#F4600C]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out-icon lucide-log-out"><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/></svg>
+                                    </div>
+                                    <span>Đăng xuất</span>
+                                </a>
+                        </div>
+
+                        
+                        <div class="md:col-span-3 col-span-1 bg-white rounded-2xl border border-[#EAECF0]">
+                            <div>
+                                <div class="border-b border-[#EAECF0] flex items-center px-5 py-4 md:px-6 md:py-5">
+                                    <h1 class="text-2xl font-bold text-gray-800 tracking-tight">Thông tin chung</h1>
+                                </div>
+                                
+                                <div>
+                                    <div class="info-row flex px-5 py-2 md:px-6 md:py-3">
+                                        <div class="w-[200px] flex items-center gap-3 text-[#667085]">
+                                            <span class="font-normal">Họ và tên</span>
+                                        </div>
+                                        <div class="mt-2 sm:mt-0 text-[#1D2939] font-semibold">Tran Van A</div>
+                                    </div>
+                                    
+                                    <div class="info-row flex px-5 py-2 md:px-6 md:py-3">
+                                        <div class="w-[200px] flex items-center gap-3 text-[#667085]">
+                                            <span class="font-normal">Số CMND/CCCD</span>
+                                        </div>
+                                        <div class="mt-2 sm:mt-0 text-[#1D2939] font-semibold">022090001234</div>
+                                    </div>
+                                    
+                                    <div class="info-row flex px-5 py-2 md:px-6 md:py-3">
+                                        <div class="w-[200px] flex items-center gap-3 text-[#667085]">
+                                            <span class="font-normal">Số điện thoại</span>
+                                        </div>
+                                        <div class="mt-2 sm:mt-0 text-[#1D2939] font-semibold">0912763488</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#f2f4f7] border border-[#EAECF0]">
+        <div class="max-w-screen-2xl mx-auto px-6 lg:px-10 py-6">
+            <div class="text-[#667085] text-[12px] flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
+                <div class="font-normal">
+                    Bản quyền © 2026 thuộc về công ty TNHH Văn Minh
+                </div>
+                <div class="flex items-center gap-x-8">
+                    <a href="#">Điều khoản dịch vụ</a>
+                    <a href="#">Chính sách bảo mật</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

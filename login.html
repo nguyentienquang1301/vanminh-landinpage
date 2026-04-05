@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Văn Minh - Đăng nhập</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS tùy chỉnh -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .login-bg {
+            background: linear-gradient(135deg, #1D2939 0%, #111827 100%);
+        }
+        
+        .card {
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+        }
+    </style>
+</head>
+<body class="login-bg min-h-screen flex items-center justify-center">
+
+    <div class="max-w-md w-full mx-auto px-6 py-12">
+        
+        <div class="bg-white rounded-3xl card p-8 md:p-10">
+
+            <h2 class="text-3xl font-bold text-[#1D2939] mb-8">Đăng Nhập</h2>
+
+            <form id="loginForm" class="space-y-6">
+                
+                <div>
+                    <label class="block font-medium text-[#1D2939] text-[14px] mb-2">Tên tài khoản</label>
+                    <input type="text" 
+                           id="username"
+                           placeholder="Nhập tên tài khoản" 
+                           class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-[#F4600C] transition-colors text-base">
+                </div>
+
+                <div>
+                    <label class="block font-medium text-[#1D2939] text-[14px] mb-2">Mật khẩu</label>
+                    <input type="password" 
+                           id="password"
+                           placeholder="Nhập mật khẩu" 
+                           class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-[#F4600C] transition-colors text-base">
+                </div>
+
+                <div class="flex justify-end">
+                    <a href="#" class="text-sm text-[#F4600C] hover:underline">Quên mật khẩu?</a>
+                </div>
+
+                <div class="flex gap-4 pt-4">
+                    <button type="button" 
+                            onclick="window.history.back()"
+                            class="flex-1 py-2 border text-[14px] border-[#F4600C] text-[#F4600C] rounded-xl hover:bg-orange-50 transition-all">
+                        Đóng
+                    </button>
+                    
+                    <button type="submit" 
+                            class="flex-1 py-2 bg-[#F4600C] text-[14px] hover:bg-[#e05500] text-white rounded-xl transition-all active:scale-95">
+                        Đăng nhập
+                    </button>
+                </div>
+            </form>
+
+            <div class="text-center mt-8 text-sm text-gray-600">
+                Chưa có tài khoản? 
+                <a href="#" class="text-[#F4600C] font-medium hover:underline">Đăng ký ngay</a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <p class="text-center text-white/70 text-sm mt-8">
+            © 2026 Văn Minh Group - All rights reserved
+        </p>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username && password) {
+                alert('Đăng nhập thành công!');
+            } else {
+                alert('Vui lòng nhập đầy đủ thông tin!');
+            }
+        });
+    </script>
+</body>
+</html>

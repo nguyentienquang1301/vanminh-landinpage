@@ -1,0 +1,76 @@
+/* css/style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --tw-color-primary: #F4600C;
+}
+
+* {
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Animation & Hover effects */
+.nav-link {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover {
+    color: #F4600C;
+    transform: translateY(-1px);
+}
+
+.hero-bg {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    
+}
+
+.mobile-menu {
+    animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Icon xoay mượt trong submenu */
+.group-hover/sub i[data-lucide="chevron-right"] {
+    transition: all 0.3s ease;
+}
+
+.hotline-pulse {
+    display: inline-block;
+    animation: hotlinePulse 2.2s ease-in-out infinite;
+}
+
+@keyframes hotlinePulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+/* Khi hover thì dừng hiệu ứng và đổi màu */
+.group:hover .hotline-pulse {
+    animation: none;
+    color: #F4600C;
+    transform: scale(1.05);
+}
+
+.nav-link.active {
+    background-color: #FFE2D18F;
+    color: #F4600C;
+}
+
+.nav-link.active div {
+    color: #F4600C;
+}
