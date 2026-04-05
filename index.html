@@ -18,6 +18,8 @@
     <!-- SLIDER -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="icon" type="image/png" href="./images/logo/logo_vm.png">
 </head>
 <body class="bg-white">
     <!-- HEADER -->
@@ -25,7 +27,7 @@
         <div class="max-w-screen-2xl mx-auto px-6 lg:px-10">
             <div class="flex items-center justify-between py-3">
                 
-                <div class="flex items-center gap-x-3 w-[51px] h-[45px]">
+                <div class="flex items-center gap-x-3 w-[51px] h-[45px] cursor-pointer">
                     <img src="./images/logo/logo_vm.png" alt="Logo Văn minh">
                 </div>
 
@@ -41,7 +43,7 @@
                 </button>
                 
                 <div class="dropdown-menu absolute hidden group-hover:block pt-7 left-0 z-50 border-[#EAECF0]">
-                    <div class="bg-white rounded-lg shadow-2xl border border-gray-100 py-5 px-5 w-72">
+                    <div class="bg-white rounded-lg shadow-2xl border border-gray-100 p-3 w-72">
                         
                         <div class="relative group/sub">
                             <div>
@@ -57,7 +59,7 @@
                             </div>
                             
                             <div class="submenu absolute hidden group-hover/sub:block top-0 left-full ml-6 pt-1 w-64 z-50">
-                                <div class="bg-white rounded-lg shadow-2xl border border-gray-100 py-4 px-5">
+                                <div class="bg-white rounded-xl shadow-xl border border-gray-100 py-4 px-5">
                                     <a href="#" class="block px-5 py-3 hover:bg-[#F4600C] rounded-xl text-[16px]">Tuyến HN-NA</a>
                                     <a href="#" class="block px-5 py-3 hover:bg-[#F4600C] rounded-xl text-[16px]">Tuyến HN-ĐN</a>
                                     <a href="#" class="block px-5 py-3 hover:bg-[#F4600C] rounded-xl text-[16px]">Tuyến HN-HT</a>
@@ -81,7 +83,7 @@
                             </div>
                             
                             <div class="submenu absolute hidden group-hover/sub:block top-0 left-full ml-6 pt-1 w-64 z-50">
-                                <div class="bg-white rounded-2xl shadow-2xl border border-gray-100 py-4 px-5">
+                                <div class="bg-white rounded-xl shadow-xl border border-gray-100 py-4 px-5">
                                     <a href="#" class="block px-5 py-3 hover:bg-[#F4600C] rounded-xl text-[16px]">Tuyến HN-NA</a>
                                     <a href="#" class="block px-5 py-3 hover:bg-[#F4600C] rounded-xl text-[16px]">Tuyến HN-ĐN</a>
                                     <a href="#" class="block px-5 py-3 hover:bg-[#F4600C] rounded-xl text-[16px]">Tuyến HN-HT</a>
@@ -204,8 +206,8 @@
     </header>
 
     <!-- MAIN -->
-    <main>
-        <section class="hero-bg pb-20 lg:pt-10 lg:pb-44">
+    <main class="bg-[#f9fafb]">
+        <section class="hero-bg py-20 lg:pt-10 lg:pb-44">
             <div class="max-w-screen-2xl mx-auto px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div class="space-y-8 lg:col-span-5">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-none tracking-tighter text-[#1D2939] [text-shadow:0_4px_4px_rgba(0,0,0,0.4)]">
@@ -218,7 +220,7 @@
                     
                     <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
                         <button onclick="toggleModal(true)" 
-                                class="border-1 border-[#F4600C] bg-[#F4600C] text-white px-8 py-3 rounded-3xl font-semibold transition-all">
+                                class="border-1 border-[#F4600C] bg-[#F4600C] text-white px-8 py-3 rounded-2xl font-semibold transition-all">
                             Yêu cầu tư vấn ngay
                         </button>
                     </div>
@@ -253,20 +255,20 @@
         <section class="relative -mt-12 lg:-mt-[102px]">
             <div class="text-[#1D2939] max-w-screen-2xl mx-auto px-6 lg:px-10">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 rounded-lg shadow-2xl border border-gray-100 bg-white">
-                    <div class="p-8 font-bold text-[24px]">
+                    <div class="p-8 font-bold text-[24px] border-b border-gray-200 md:border-b-0">
                         Vì sao nên<br>chọn chúng tôi
                     </div>
-                    <div class="p-8">
+                    <div class="p-8 border-b border-gray-200 md:border-b-0">
                         <img src="./images/icon/title-text.png" alt="title text">
                         <div class="pt-3 font-bold text-[18px]">100% giữ chỗ</div>
                         <div class="pt-3 text-[#667085]">Không lo bị mất chỗ</div>
                     </div>
-                    <div class="p-8">
+                    <div class="p-8 border-b border-gray-200 md:border-b-0">
                         <img src="./images/icon/checkmark.png" alt="checkmark">
                         <div class="pt-3 font-bold text-[18px]">Đặt vé siêu tốc</div>
                         <div class="pt-3 text-[#667085]">Đặt vé nhanh trong vòng 5<br>phút</div>
                     </div>
-                    <div class="p-8">
+                    <div class="p-8 border-b border-gray-200 md:border-b-0">
                         <img src="./images/icon/copy-replace.png" alt="copy replace">
                         <div class="pt-3 font-bold text-[18px]">Tối ưu trải nghiệm</div>
                         <div class="pt-3 text-[#667085]">Trải nghiệm di chuyển đẳng<br>cấp</div>
@@ -278,7 +280,7 @@
         <section class="pb-20 bg-[#f9fafb]">
             <div class="max-w-screen-2xl mx-auto px-6 lg:px-10">
                 
-                <div class="text-center mt-12">
+                <div class="text-center mt-20">
                     <h2 class="font-bold text-[24px] md:text-[30px] text-[#1D2939] mx-auto mb-10">
                         Danh sách sản phẩm
                     </h2>
@@ -286,7 +288,7 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     
-                    <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                    <div class="group bg-white cursor-pointer rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
                         <div class="h-64 bg-gray-200 relative overflow-hidden">
                             <img src="./images/main/products/product1.png" 
                                 alt="Xe khách Văn Minh" 
@@ -307,7 +309,7 @@
                         </div>
                     </div>
 
-                    <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                    <div class="group bg-white cursor-pointer rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
                         <div class="h-64 bg-gray-200 relative overflow-hidden">
                             <img src="./images/main/products/product2.png" 
                                 alt="Bưu chính Văn Minh" 
@@ -328,7 +330,7 @@
                         </div>
                     </div>
 
-                    <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                    <div class="group bg-white cursor-pointer rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
                         <div class="h-64 bg-gray-200 relative overflow-hidden">
                             <img src="./images/main/products/product3.png" 
                                 alt="Du học Văn Minh" 
@@ -349,7 +351,7 @@
                         </div>
                     </div>
 
-                    <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                    <div class="group bg-white cursor-pointer rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
                         <div class="h-64 bg-gray-200 relative overflow-hidden">
                             <img src="./images/main/products/product4.png" 
                                 alt="Bến bãi Văn Minh" 
@@ -370,7 +372,7 @@
                         </div>
                     </div>
 
-                    <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                    <div class="group bg-white cursor-pointer rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
                         <div class="h-64 bg-gray-200 relative overflow-hidden">
                             <img src="./images/main/products/product5.png" 
                                 alt="Đối tác Văn Minh" 
@@ -391,7 +393,7 @@
                         </div>
                     </div>
 
-                    <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                    <div class="group bg-white cursor-pointer rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
                         <div class="h-64 bg-gray-200 relative overflow-hidden">
                             <img src="./images/main/products/product6.png" 
                                 alt="Vận tải Văn Minh" 
@@ -419,7 +421,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-[#f2f4f7] border border-[#EAECF0]">
+    <footer class="bg-[#f9fafb] border border-[#EAECF0]">
         <div class="max-w-screen-2xl mx-auto px-6 lg:px-10 py-6">
             <div class="text-[#667085] text-[12px] flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
                 <div class="font-normal">

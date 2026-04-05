@@ -107,3 +107,10 @@
         display: none;
     }
 }
+.login-bg {
+    background: linear-gradient(135deg, #1D2939 0%, #111827 100%);
+}
+
+.card {
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+}
