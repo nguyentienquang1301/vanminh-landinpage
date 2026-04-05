@@ -121,3 +121,27 @@ function toggleActive (button) {
 
     button.classList.add('active');
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper(".mySwiper", {
+        effect: "fade", 
+        fadeEffect: {
+            crossFade: true
+        },
+
+        // Cấu hình dấu chấm phân trang
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+
+        loop: true, 
+
+        speed: 800, 
+    });
+});
